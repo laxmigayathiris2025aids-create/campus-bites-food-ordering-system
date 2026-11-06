@@ -1,0 +1,684 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fffaf4;
+    color: #6A0DAD;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6A0DAD;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6A0DAD;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #6A0DAD;
+}
+
+.login-btn {
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #6A0DAD;
+    transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    background: linear-gradient(120deg, #fff0df, #ffe0c2);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    color: #35251e;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 25px;
+    color: #6A0DAD;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #725c50;
+    margin-bottom: 30px;
+}
+
+.order-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6A0DAD;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #6A0DAD;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    font-size: 180px;
+    filter: drop-shadow(5px 10px 10px rgba(0,0,0,0.15));
+}
+
+/* SHOPS SECTION */
+
+.shops {
+    text-align: center;
+    padding: 75px 8%;
+}
+
+.shops h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #35251e;
+}
+
+.shops > p {
+    color: #806d61;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.shop-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+    border: 1px solid #f5e7da;
+}
+
+.shop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(230, 107, 36, 0.15);
+}
+
+.shop-icon {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.shop-card h3 {
+    font-size: 23px;
+    color: #6A0DAD;
+    margin-bottom: 12px;
+}
+
+.shop-card p {
+    color: #806d61;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.shop-card button {
+    background-color: #35251e;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.shop-card button:hover {
+    background-color: #6A0DAD;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: #35251e;
+    color: white;
+    padding: 35px 20px;
+}
+
+footer h3 {
+    color: #6A0DAD;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #e5d5ca;
+    margin: 8px 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+    }
+
+    .hero-image {
+        font-size: 120px;
+        margin-top: 30px;
+    }
+
+    .shop-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FOOD MENU */
+
+.food-menu {
+    text-align: center;
+    padding: 70px 8%;
+    background-color: #fff4e8;
+}
+
+.food-menu h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.food-menu > p {
+    color: #806d61;
+    margin-bottom: 35px;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.food-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-image {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    color: #6A0DAD;
+    margin-bottom: 10px;
+}
+
+.food-card p {
+    color: #806d61;
+    margin-bottom: 15px;
+}
+
+.food-card h4 {
+    font-size: 20px;
+    color: #35251e;
+}
+
+@media (max-width: 768px) {
+    .food-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* CART SECTION */
+
+.cart-section {
+    padding: 60px 8%;
+    text-align: center;
+    background: #fff;
+}
+
+.cart-section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff4e8;
+    padding: 15px 20px;
+    margin: 12px auto;
+    max-width: 650px;
+    border-radius: 10px;
+}
+
+.cart-item p {
+    margin: 5px;
+}
+
+#cart-total {
+    margin: 25px;
+    font-size: 24px;
+}
+
+#checkout-btn {
+    background: #6A0DAD;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background: #6A0DAD;
+}
+/* STUDENT LOGIN */
+
+.login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-box {
+    background: white;
+    padding: 35px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+    color: #6A0DAD;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    background: #6A0DAD;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box button:hover {
+    background: #6A0DAD;
+}
+/* FONT AND GLOBAL COLORS */
+
+* {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #FAF7FF;
+    color: #28143D;
+}
+
+/* HEADER */
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 15px rgba(70, 30, 100, 0.08);
+}
+
+.logo {
+    color: #512477;
+}
+
+nav a {
+    color: #28143D;
+}
+
+nav a:hover {
+    color: #6A2D91;
+}
+
+.login-btn {
+    background-color: #642D91;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #512477;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(
+        120deg,
+        #F3E9FF,
+        #E3D0FF
+    );
+}
+
+.hero-content h1 {
+    color: #28143D;
+}
+
+.hero-content h2 {
+    color: #65318B;
+}
+
+.hero-content p {
+    color: #7B7187;
+}
+
+.order-btn {
+    background-color: #642D91;
+    color: white;
+}
+
+.order-btn:hover {
+    background-color: #512477;
+}
+
+/* SHOPS SECTION */
+
+.shops {
+    background-color: #FAF7FF;
+}
+
+.shops h2 {
+    color: #28143D;
+}
+
+.shops > p {
+    color: #7B7187;
+}
+
+.shop-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E9E0F0;
+    box-shadow: 0 5px 25px rgba(70, 30, 100, 0.07);
+}
+
+.shop-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(100, 45, 145, 0.12);
+}
+
+.shop-card h3 {
+    color: #65318B;
+}
+
+.shop-card p {
+    color: #7B7187;
+}
+
+.shop-card button {
+    background-color: #642D91;
+    color: white;
+}
+
+.shop-card button:hover {
+    background-color: #512477;
+}
+
+/* FOOD MENU */
+
+.food-menu {
+    background-color: #F6F0FC;
+}
+
+.food-menu h2 {
+    color: #28143D;
+}
+
+.food-menu > p {
+    color: #7B7187;
+}
+
+.food-card {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 20px rgba(70, 30, 100, 0.07);
+}
+
+.food-card h3 {
+    color: #65318B;
+}
+
+.food-card p {
+    color: #7B7187;
+}
+
+.food-card h4 {
+    color: #28143D;
+}
+
+/* CART SECTION */
+
+.cart-section {
+    background-color: #FFFFFF;
+}
+
+.cart-item {
+    background-color: #F3E9FF;
+}
+
+#cart-total {
+    color: #28143D;
+}
+
+#checkout-btn {
+    background-color: #642D91;
+}
+
+#checkout-btn:hover {
+    background-color: #512477;
+}
+
+/* STUDENT LOGIN */
+
+.login-container {
+    background: rgba(40, 20, 61, 0.6);
+}
+
+.login-box {
+    background-color: #FFFFFF;
+}
+
+.login-box h2 {
+    color: #642D91;
+}
+
+.login-box input {
+    border: 1px solid #E0D5EB;
+}
+
+.login-box button {
+    background-color: #642D91;
+}
+
+.login-box button:hover {
+    background-color: #512477;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #28143D;
+}
+
+footer h3 {
+    color: #DCC2FF;
+}
+
+footer p {
+    color: #E5D5F5;
+}
+/* CAMPUS BITES LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #512477;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* HERO MASCOT IMAGE */
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.15));
+}
+/* Bill Card */
+#bill-container {
+    margin-top: 25px;
+}
+
+.bill-card {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.bill-card h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.bill-card p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.bill-card .bill-total {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.bill-card .bill-success {
+    text-align: center;
+    color: #2e7d32;
+    font-weight: bold;
+}
